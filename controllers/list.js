@@ -1,5 +1,6 @@
 const listModel = require("../models/list");
 
+// 渲染页面
 function view(req, res) {
   const list = listModel.getUserList();
   // 第一个参数表示视图路径，默认在views下
@@ -9,6 +10,13 @@ function view(req, res) {
   });
 }
 
+// 新增user
+function addUser(req, res) {
+    const newUser = listModel.addUser(req.body)
+    res.send(newUser)
+}
+
 module.exports = {
-  view,
+    view,
+    addUser
 };

@@ -9,7 +9,6 @@ app.set("view engine", "ejs");
 // 绑定静态资源目录
 app.use(Express.static(join(__dirname, "public")));
 // 注册路由
-console.log(11111, router)
 app.use(router)
 
 // 监听8080端口
