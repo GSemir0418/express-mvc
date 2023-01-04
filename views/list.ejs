@@ -1,3 +1,16 @@
 <%- include('./templates/top.ejs') %>
-<h1><%= title  %></h1>
+<h1>User List</h1>
+<ul>
+  <% list.forEach(item => { %>
+  <li>
+    <a href="http://localhost:8080/detail/<%= item.id %>">
+      <%= item.name + ' ' + item.age %>
+    </a>
+    <button class="remove-btn" data-id="<%= item.id %> ">REMOVE</button>
+  </li>
+  <% }) %>
+  <!--
+    data-* 表示元素的自定义属性，其值可以是任意字符串
+  -->
+</ul>
 <%- include('./templates/bottom.ejs') %>
