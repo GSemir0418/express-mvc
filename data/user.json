@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "gsq",
+    "age": 14,
+    "gender": "male",
+    "weight": 80
+  },
+  {
+    "id": 2,
+    "name": "zs",
+    "age": 15,
+    "gender": "female",
+    "weight": 50
+  },
+  {
+    "id": 3,
+    "name": "sam",
+    "age": 18,
+    "gender": "male",
+    "weight": 89
+  },
+  {
+    "id": 4,
+    "name": "gsemir",
+    "age": 20,
+    "gender": "male",
+    "weight": 100
+  }
+]
