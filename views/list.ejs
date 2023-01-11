@@ -1,6 +1,6 @@
 <%- include('./templates/top.ejs') %>
 <h1>User List</h1>
-<ul>
+<ul id="userList">
   <% list.forEach(item => { %>
   <li>
     <a href="http://localhost:8080/detail/<%= item.id %>">

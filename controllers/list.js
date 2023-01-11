@@ -12,11 +12,18 @@ function view(req, res) {
 
 // 新增user
 function addUser(req, res) {
-    const newUser = listModel.addUser(req.body)
-    res.send(newUser)
+  const newUser = listModel.addUser(req.body);
+  res.send(newUser);
+}
+
+// 删除user
+function removeUser(req, res) {
+  const { id } = req.params;
+  res.send(listModel.removeUserById(id));
 }
 
 module.exports = {
-    view,
-    addUser
+  view,
+  addUser,
+  removeUser,
 };

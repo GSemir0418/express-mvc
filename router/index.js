@@ -9,5 +9,5 @@ const jsonParser = bodyParser.json();
 router.get("/list", listController.view);
 router.get("/detail/:id", detailController.view);
 router.post("/list/user", jsonParser, listController.addUser);
-
+router.delete('/list/:id', listController.removeUser)
 module.exports = router;
